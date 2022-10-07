@@ -3,8 +3,11 @@ import {
   AiFillLinkedin,
   AiFillGithub,
   AiFillTwitterCircle,
+  AiOutlineMail,
 } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
+import Image from "next/image";
+import hero from "../public/hero-img.png";
 import { useState } from "react";
 
 export default function Home() {
@@ -16,23 +19,43 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="px-10">
-        <section className="min-h-screen">
-          <nav className="py-10 mb-10 flex justify-between">
-            <h1 className="text-xl">vsilagy</h1>
+        <section className="max-w-screen-md min-h-screen mx-auto">
+          <nav className="py-10 flex justify-between">
+            <h1 className="text-3xl font-bold"> &lt;vsilagy/&gt;</h1>
             <ul className="flex items-center">
               <li>
-                <BsFillMoonStarsFill className="cursor-pointer text-2xl" />
-              </li>
-              <li>
                 <a
-                  className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
+                  className="text-black px-4 py-2 rounded-md hover:bg-blue-500 hover:text-white"
                   href="#"
                 >
                   Resume
                 </a>
               </li>
+              <li>
+                <BsFillMoonStarsFill className="cursor-pointer text-2xl ml-8" />
+              </li>
             </ul>
           </nav>
+          <div className="text-center p-10">
+            <div className="mx-auto w-72 h-72 mb-5">
+              <Image src={hero} className="rounded-full" />
+            </div>
+            <h2 className="text-5xl py-2 text-blue-500 font-bold">
+              Vlad Silagy
+            </h2>
+            <h3 className="text-2xl py-2">Frontend Developer</h3>
+            <p className="text-md py-5 leading-8 text-gray-800">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempus
+              posuere sem, nec malesuada risus ultrices non. Suspendisse
+              potenti!
+            </p>
+          </div>
+          <div className="text-5xl flex justify-center gap-16 ease-in-out ">
+            <AiFillGithub className="text-[#171515] hover:animate-pulse" />
+            <AiFillLinkedin className="text-[#0072b1] hover:animate-pulse" />
+            <AiFillTwitterCircle className="text-[#1DA1F2] hover:animate-pulse" />
+            <AiOutlineMail className="hover:animate-pulse" />
+          </div>
         </section>
       </main>
     </div>

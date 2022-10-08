@@ -61,7 +61,7 @@ export default function Home() {
           <ul className="flex items-center gap-2 md:gap-4">
             <li>
               <a
-                className="px-2 py-1 rounded-md hover:ring-2 hover:ring-amber-500 md:px-4 md:py-2"
+                className="px-2 py-1 rounded-md hover:ring-2 hover:ring-orange-500 md:px-4 md:py-2"
                 href="#"
               >
                 About
@@ -69,7 +69,7 @@ export default function Home() {
             </li>
             <li>
               <a
-                className="px-2 py-1 rounded-md hover:ring-2 hover:ring-amber-500 md:px-4 md:py-2"
+                className="px-2 py-1 rounded-md hover:ring-2 hover:ring-orange-500 md:px-4 md:py-2"
                 href="#"
               >
                 Projects
@@ -77,7 +77,7 @@ export default function Home() {
             </li>
             <li>
               <a
-                className="px-2 py-1 rounded-md hover:ring-2 hover:ring-amber-500 md:px-4 md:py-2"
+                className="px-2 py-1 rounded-md hover:ring-2 hover:ring-orange-500 md:px-4 md:py-2"
                 href="#"
               >
                 Resume
@@ -92,7 +92,7 @@ export default function Home() {
               <Image src={profile} className="rounded-full " />
             </div>
             <div className="order-1 flex-1">
-              <h1 className="text-5xl py-2 text-blue-500  dark:text-amber-500 font-bold md:text-6xl">
+              <h1 className="text-5xl py-2 text-blue-500  dark:text-orange-500 font-bold md:text-6xl">
                 Vlad Silagy
               </h1>
               <h2 className="text-2xl py-2 font-mono font-bold md:text-3xl">
@@ -110,7 +110,7 @@ export default function Home() {
               href="https://github.com/vsilagy"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-amber-500"
+              className="hover:text-orange-500"
             >
               <AiFillGithub />
             </a>
@@ -118,7 +118,7 @@ export default function Home() {
               href="https://www.linkedin.com/in/vsilagy/"
               target="_blank"
               rel="noopener noreferrer"
-              className=" hover:text-[#0072b1]"
+              className=" text-[#0072b1] hover:text-orange-500"
             >
               <AiFillLinkedin />
             </a>
@@ -126,7 +126,7 @@ export default function Home() {
               href="https://twitter.com/VladSilagy"
               target="_blank"
               rel="noopener noreferrer"
-              className=" hover:text-[#1DA1F2]"
+              className=" text-[#1DA1F2] hover:text-orange-500"
             >
               <AiFillTwitterCircle />
             </a>
@@ -134,7 +134,7 @@ export default function Home() {
               href="mailto:vladsilagy@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-amber-500"
+              className="hover:text-orange-500"
             >
               <AiOutlineMail />
             </a>
@@ -188,8 +188,8 @@ export default function Home() {
           </div>
         </section>
         <footer>
-          <div className="flex gap-4 justify-center items-center text-slate-700 dark:text-slate-300">
-            <p>© 2022 &nbsp; Vlad Silagy</p>
+          <div className="flex gap-2 justify-center items-center text-slate-700 dark:text-slate-300">
+            <p>© 2022 Vlad Silagy</p>
             <a
               href="https://github.com/vsilagy/portfolio-nextjs"
               target="_blank"

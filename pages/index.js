@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import { useTheme } from "next-themes";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
 import { useState, useEffect } from "react";
@@ -54,10 +55,12 @@ export default function Home() {
       </Head>
       <main className="max-w-screen-lg mx-auto px-5">
         <nav className="flex justify-between items-start py-10">
-          <a className="text-lg font-mono font-bold md:text-2xl" href="/">
-            {" "}
-            &lt;vsilagy/&gt;
-          </a>
+          <Link href="/">
+            <a className="text-lg font-mono font-bold md:text-2xl">
+              {" "}
+              &lt;vsilagy/&gt;
+            </a>
+          </Link>
           <ul className="flex items-center gap-2 md:gap-4">
             <li>
               <a

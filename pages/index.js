@@ -9,6 +9,7 @@ import {
   AiFillTwitterCircle,
   AiOutlineMail,
 } from "react-icons/ai";
+import Header from "./Header";
 import Image from "next/image";
 import profile from "../public/profile-img.png";
 import project1 from "../public/project-1.png";
@@ -54,41 +55,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="max-w-screen-lg mx-auto px-5">
-        <nav className="flex justify-between items-start py-10">
-          <Link href="/">
-            <a className="text-lg font-mono font-bold md:text-2xl">
-              {" "}
-              &lt;vsilagy/&gt;
-            </a>
-          </Link>
-          <ul className="flex items-center gap-2 md:gap-4">
-            <li>
-              <a
-                className="px-2 py-1 rounded-md hover:ring-2 hover:ring-orange-500 md:px-4 md:py-2"
-                href="#"
-              >
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                className="px-2 py-1 rounded-md hover:ring-2 hover:ring-orange-500 md:px-4 md:py-2"
-                href="#"
-              >
-                Projects
-              </a>
-            </li>
-            <li>
-              <a
-                className="px-2 py-1 rounded-md hover:ring-2 hover:ring-orange-500 md:px-4 md:py-2"
-                href="#"
-              >
-                Resume
-              </a>
-            </li>
-            <li>{renderThemeChanger()}</li>
-          </ul>
-        </nav>
+        <Header />
         <section className="min-h-full mb-20">
           <div className="text-center p-10">
             <div className="mx-auto w-64 h-64 mb-5 md:w-[20rem] md:h-[20rem] rounded-full">

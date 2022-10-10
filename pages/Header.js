@@ -41,10 +41,10 @@ export default function Header() {
           &lt;vsilagy/&gt;
         </a>
       </Link>
-      <ul className="flex items-center gap-2 md:gap-4">
+      <ul className="flex items-center gap-4">
         <li>
           <a
-            className="px-2 py-1 rounded-md hover:ring-2 hover:ring-blue-500 md:px-4 md:py-2"
+            className="bg-transparent hover:bg-blue-500 hover:text-white py-2 px-4 hover:border-transparent rounded-md"
             href="#"
           >
             About
@@ -52,7 +52,7 @@ export default function Header() {
         </li>
         <li>
           <a
-            className="px-2 py-1 rounded-md hover:ring-2 hover:ring-blue-500 md:px-4 md:py-2"
+            className="bg-transparent hover:bg-blue-500 hover:text-white py-2 px-4 hover:border-transparent rounded-md"
             href="#"
           >
             Projects
@@ -60,7 +60,7 @@ export default function Header() {
         </li>
         <li>
           <a
-            className="px-2 py-1 rounded-md hover:ring-2 hover:ring-blue-500 md:px-4 md:py-2"
+            className="bg-transparent hover:bg-blue-500 hover:text-white py-2 px-4 hover:border-transparent rounded-md"
             href="#"
           >
             Resume

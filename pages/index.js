@@ -15,6 +15,7 @@ import project2 from "../public/project-2.png";
 import project3 from "../public/project-3.png";
 import project4 from "../public/project-4.png";
 import CardButton from "../components/CardButton";
+import Card from "../components/Card";
 
 export default function Home() {
   return (

@@ -18,7 +18,7 @@ export default function DarkModeToggle() {
     if (currentTheme === "dark") {
       return (
         <MdLightMode
-          className="text-2xl hover:text-amber-500"
+          className=" text-2xl hover:text-amber-500"
           onClick={() => setTheme("light")}
         />
       );

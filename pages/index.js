@@ -3,13 +3,7 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import Card from "../components/Card";
 import SocialLink from "../components/SocialLink";
-import {
-  AiFillLinkedin,
-  AiFillGithub,
-  AiFillTwitterCircle,
-  AiOutlineMail,
-} from "react-icons/ai";
-import { HiCode, HiExternalLink } from "react-icons/hi";
+import { SiLinkedin, SiGithub, SiTwitter, SiGmail } from "react-icons/si";
 import Image from "next/image";
 import profile from "../public/profile-img.png";
 import project1 from "../public/project-1.png";
@@ -21,21 +15,23 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Vlad V Silagy - Frontend Developer</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Frontend developer based in NYC" />
         <link rel="icon" href="/favicon.ico" />
+        <title>Vlad Silagy - Frontend Developer</title>
       </Head>
       <main className="max-w-screen-lg mx-auto px-5">
         <NavBar />
-        <section className="min-h-full mb-20">
+        <section className="min-w-full mb-20">
           <div className="text-center py-5 mb-5 md:flex">
             <div className="mx-auto mb-5 rounded-full md:basis-1/2 md:order-2">
               <Image
                 src={profile}
-                alt="Vlad Silagy"
+                alt="Vlad V Silagy"
                 height={360}
                 width={360}
                 className="rounded-full"
+                // layout="responsive"
               />
             </div>
             <div className=" flex-1 md:text-start md:basis-1/2 md:mr-10">
@@ -50,23 +46,23 @@ export default function Home() {
                 tempus posuere sem Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit. Ut tempus
               </p>
-              <div className="text-5xl flex justify-center gap-8 py-5 ease-in-out md:justify-start">
+              <div className="text-4xl flex justify-center gap-8 py-5 ease-in-out md:justify-start">
                 <SocialLink
                   href={"https://github.com/vsilagy"}
-                  icon={<AiFillGithub />}
+                  icon={<SiGithub />}
                 />
                 <SocialLink
                   href={"https://www.linkedin.com/in/vsilagy/"}
-                  icon={<AiFillLinkedin />}
+                  icon={<SiLinkedin />}
                 />
                 <SocialLink
                   href={"https://twitter.com/VladSilagy"}
-                  icon={<AiFillTwitterCircle />}
+                  icon={<SiTwitter />}
                 />
 
                 <SocialLink
                   href={"mailto:vladsilagy@gmail.com"}
-                  icon={<AiOutlineMail />}
+                  icon={<SiGmail />}
                 />
               </div>
             </div>

@@ -32,6 +32,7 @@ export default function Home() {
             <div className="mx-auto mb-5 rounded-full md:basis-1/2 md:order-2">
               <Image
                 src={profile}
+                alt="Vlad Silagy"
                 height={360}
                 width={360}
                 className="rounded-full"

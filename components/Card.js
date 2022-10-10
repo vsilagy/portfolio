@@ -6,6 +6,7 @@ export default function Card({ image, live, source, liveLink, sourceLink }) {
     <div className="basis-1/3 flex-1 w-[25rem] p-2 rounded-lg shadow-xl dark:bg-slate-700">
       <Image
         src={image}
+        alt="project screenshot"
         className="rounded-lg object-cover"
         width={"100%"}
         height={"100%"}

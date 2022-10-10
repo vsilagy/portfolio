@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Header from "./Header";
-import Footer from "./Footer";
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 import {
   AiFillLinkedin,
   AiFillGithub,
@@ -14,18 +14,18 @@ import project1 from "../public/project-1.png";
 import project2 from "../public/project-2.png";
 import project3 from "../public/project-3.png";
 import project4 from "../public/project-4.png";
-import react from "react";
+import CardButton from "../components/CardButton";
 
 export default function Home() {
   return (
     <div>
       <Head>
-        <title>Vlad Silagy - Frontend Developer</title>
+        <title>Vlad V Silagy - Frontend Developer</title>
         <meta name="description" content="Frontend developer based in NYC" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="max-w-screen-lg mx-auto px-5">
-        <Header />
+        <NavBar />
         <section className="min-h-full mb-20">
           <div className="text-center py-5 mb-5 md:flex">
             <div className="mx-auto mb-5 rounded-full md:basis-1/2 md:order-2">
@@ -102,12 +102,16 @@ export default function Home() {
                 layout="responsive"
               />
               <div className="flex justify-center gap-5 py-5">
-                <button className="w-28 bg-transparent hover:bg-blue-500  hover:text-white py-2 px-4 border border-black dark:border-white hover:border-transparent dark:hover:border-transparent rounded-md">
-                  Source
-                </button>
-                <button className="w-28 bg-transparent hover:bg-blue-500  hover:text-white py-2 px-4 border border-black dark:border-white hover:border-transparent dark:hover:border-transparent rounded-md">
-                  Live
-                </button>
+                <CardButton
+                  name={"Link"}
+                  link={"https://vsilagy.github.io/calculator/"}
+                  icon={<HiExternalLink />}
+                />
+                <CardButton
+                  name={"Source"}
+                  link={"https://github.com/vsilagy/calculator/"}
+                  icon={<HiCode />}
+                />
               </div>
             </div>
             <div className="basis-1/3 flex-1 w-[25rem] p-2 rounded-lg shadow-xl dark:bg-slate-700">
@@ -119,12 +123,16 @@ export default function Home() {
                 layout="responsive"
               />
               <div className="flex justify-center gap-5 py-5">
-                <button className="w-28 bg-transparent hover:bg-blue-500  hover:text-white py-2 px-4 border border-black dark:border-white hover:border-transparent dark:hover:border-transparent rounded-md">
-                  Source
-                </button>
-                <button className="w-28 bg-transparent hover:bg-blue-500  hover:text-white py-2 px-4 border border-black dark:border-white hover:border-transparent dark:hover:border-transparent rounded-md">
-                  Live
-                </button>
+                <CardButton
+                  name={"Link"}
+                  link={"https://vsilagy.github.io/tic-tac-toe/"}
+                  icon={<HiExternalLink />}
+                />
+                <CardButton
+                  name={"Source"}
+                  link={"https://github.com/vsilagy/tic-tac-toe/"}
+                  icon={<HiCode />}
+                />
               </div>
             </div>
             <div className="basis-1/3 flex-1 w-[25rem] p-2 rounded-lg shadow-xl dark:bg-gray-700">
@@ -136,12 +144,16 @@ export default function Home() {
                 layout="responsive"
               />
               <div className="flex justify-center gap-5 py-5">
-                <button className="w-28 bg-transparent hover:bg-blue-500  hover:text-white py-2 px-4 border border-black dark:border-white hover:border-transparent dark:hover:border-transparent rounded-md">
-                  Source
-                </button>
-                <button className="w-28 bg-transparent hover:bg-blue-500  hover:text-white py-2 px-4 border border-black dark:border-white hover:border-transparent dark:hover:border-transparent rounded-md">
-                  Live
-                </button>
+                <CardButton
+                  name={"Link"}
+                  link={"https://vsilagy.github.io/library/"}
+                  icon={<HiExternalLink />}
+                />
+                <CardButton
+                  name={"Source"}
+                  link={"https://github.com/vsilagy/library/"}
+                  icon={<HiCode />}
+                />
               </div>
             </div>
             <div className="basis-1/3 flex-1 w-[25rem] p-2 rounded-lg shadow-xl dark:bg-gray-700">
@@ -153,14 +165,16 @@ export default function Home() {
                 layout="responsive"
               />
               <div className="flex justify-center gap-5 py-5">
-                <button className="w-28 flex justify-center gap-2 items-center bg-transparent hover:bg-blue-500  hover:text-white py-2 px-4 border border-black dark:border-white hover:border-transparent dark:hover:border-transparent rounded-md">
-                  Live
-                  <HiExternalLink />
-                </button>
-                <button className="w-28 flex justify-center gap-2 items-center bg-transparent hover:bg-blue-500  hover:text-white py-2 px-4 border border-black dark:border-white hover:border-transparent dark:hover:border-transparent rounded-md">
-                  Source
-                  <HiCode />
-                </button>
+                <CardButton
+                  name={"Link"}
+                  link={"https://vsilagy.github.io/rock-paper-scissors/"}
+                  icon={<HiExternalLink />}
+                />
+                <CardButton
+                  name={"Source"}
+                  link={"https://github.com/vsilagy/rock-paper-scissors/"}
+                  icon={<HiCode />}
+                />
               </div>
             </div>
           </div>

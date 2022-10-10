@@ -1,15 +1,12 @@
 import Head from "next/head";
-import Link from "next/link";
-import { useTheme } from "next-themes";
-import { MdDarkMode, MdLightMode } from "react-icons/md";
-import { useState, useEffect } from "react";
+import Header from "./Header";
+import Footer from "./Footer";
 import {
   AiFillLinkedin,
   AiFillGithub,
   AiFillTwitterCircle,
   AiOutlineMail,
 } from "react-icons/ai";
-import Header from "./Header";
 import Image from "next/image";
 import profile from "../public/profile-img.png";
 import project1 from "../public/project-1.png";
@@ -18,35 +15,6 @@ import project3 from "../public/project-3.png";
 import project4 from "../public/project-4.png";
 
 export default function Home() {
-  const { systemTheme, theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  const renderThemeChanger = () => {
-    if (!mounted) return null;
-
-    const currentTheme = theme === "system" ? systemTheme : theme;
-
-    if (currentTheme === "dark") {
-      return (
-        <MdLightMode
-          className="text-2xl hover:text-amber-500"
-          onClick={() => setTheme("light")}
-        />
-      );
-    } else {
-      return (
-        <MdDarkMode
-          className="text-2xl hover:text-amber-500"
-          onClick={() => setTheme("dark")}
-        />
-      );
-    }
-  };
-
   return (
     <div>
       <Head>
@@ -62,7 +30,7 @@ export default function Home() {
               <Image src={profile} className="rounded-full " />
             </div>
             <div className="order-1 flex-1">
-              <h1 className="text-5xl py-2 text-blue-500  dark:text-orange-500 font-bold md:text-6xl">
+              <h1 className="text-5xl py-2 text-blue-500  dark:text-orange-400 font-bold md:text-6xl">
                 Vlad Silagy
               </h1>
               <h2 className="text-2xl py-2 font-mono font-bold md:text-3xl">
@@ -80,7 +48,7 @@ export default function Home() {
               href="https://github.com/vsilagy"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-orange-500"
+              className="hover:text-blue-500"
             >
               <AiFillGithub />
             </a>
@@ -88,7 +56,7 @@ export default function Home() {
               href="https://www.linkedin.com/in/vsilagy/"
               target="_blank"
               rel="noopener noreferrer"
-              className=" text-[#0072b1] hover:text-orange-500"
+              className="  hover:text-[#0072b1]"
             >
               <AiFillLinkedin />
             </a>
@@ -96,7 +64,7 @@ export default function Home() {
               href="https://twitter.com/VladSilagy"
               target="_blank"
               rel="noopener noreferrer"
-              className=" text-[#1DA1F2] hover:text-orange-500"
+              className="  hover:text-[#1DA1F2]"
             >
               <AiFillTwitterCircle />
             </a>
@@ -104,7 +72,7 @@ export default function Home() {
               href="mailto:vladsilagy@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-orange-500"
+              className="hover:text-blue-500"
             >
               <AiOutlineMail />
             </a>
@@ -157,19 +125,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <footer>
-          <div className="flex gap-2 justify-center items-center text-slate-700 dark:text-slate-300">
-            <p>© 2022 Vlad Silagy</p>
-            <a
-              href="https://github.com/vsilagy/portfolio-nextjs"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-2xl hover:text-amber-500"
-            >
-              <AiFillGithub />
-            </a>
-          </div>
-        </footer>
+        <Footer />
       </main>
     </div>
   );

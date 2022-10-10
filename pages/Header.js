@@ -36,7 +36,7 @@ export default function Header() {
   return (
     <nav className="flex justify-between items-start py-10">
       <Link href="/">
-        <a className="text-lg font-mono font-bold md:text-2xl">
+        <a className="text-lg font-mono font-bold md:text-2xl hover:text-blue-500">
           {" "}
           &lt;vsilagy/&gt;
         </a>
@@ -44,7 +44,7 @@ export default function Header() {
       <ul className="flex items-center gap-2 md:gap-4">
         <li>
           <a
-            className="px-2 py-1 rounded-md hover:ring-2 hover:ring-orange-500 md:px-4 md:py-2"
+            className="px-2 py-1 rounded-md hover:ring-2 hover:ring-blue-500 md:px-4 md:py-2"
             href="#"
           >
             About
@@ -52,7 +52,7 @@ export default function Header() {
         </li>
         <li>
           <a
-            className="px-2 py-1 rounded-md hover:ring-2 hover:ring-orange-500 md:px-4 md:py-2"
+            className="px-2 py-1 rounded-md hover:ring-2 hover:ring-blue-500 md:px-4 md:py-2"
             href="#"
           >
             Projects
@@ -60,7 +60,7 @@ export default function Header() {
         </li>
         <li>
           <a
-            className="px-2 py-1 rounded-md hover:ring-2 hover:ring-orange-500 md:px-4 md:py-2"
+            className="px-2 py-1 rounded-md hover:ring-2 hover:ring-blue-500 md:px-4 md:py-2"
             href="#"
           >
             Resume

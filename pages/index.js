@@ -1,6 +1,8 @@
 import Head from "next/head";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
+import Card from "../components/Card";
+import SocialLink from "../components/SocialLink";
 import {
   AiFillLinkedin,
   AiFillGithub,
@@ -14,8 +16,6 @@ import project1 from "../public/project-1.png";
 import project2 from "../public/project-2.png";
 import project3 from "../public/project-3.png";
 import project4 from "../public/project-4.png";
-import CardButton from "../components/CardButton";
-import Card from "../components/Card";
 
 export default function Home() {
   return (
@@ -32,55 +32,41 @@ export default function Home() {
             <div className="mx-auto mb-5 rounded-full md:basis-1/2 md:order-2">
               <Image
                 src={profile}
-                height={320}
-                width={320}
+                height={360}
+                width={360}
                 className="rounded-full"
               />
             </div>
-            <div className=" flex-1 md:text-start md:basis-1/2">
-              <h1 className="text-5xl py-2 text-blue-500  dark:text-orange-400 font-bold md:text-6xl">
-                Vlad V Silagy
+            <div className=" flex-1 md:text-start md:basis-1/2 md:mr-10">
+              <h1 className="text-6xl py-2 text-blue-500  dark:text-orange-400 font-bold lg:text-7xl">
+                Vlad Silagy
               </h1>
               <h2 className="text-2xl py-2 font-mono font-bold md:text-3xl">
                 Frontend Developer
               </h2>
-              <p className="text-md py-5">
+              <p className="text-md py-2">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                tempus posuere sem
+                tempus posuere sem Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Ut tempus
               </p>
-              <div className="text-5xl flex justify-center gap-8 ease-in-out md:justify-start">
-                <a
-                  href="https://github.com/vsilagy"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-blue-500"
-                >
-                  <AiFillGithub />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/vsilagy/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="  hover:text-[#0072b1]"
-                >
-                  <AiFillLinkedin />
-                </a>
-                <a
-                  href="https://twitter.com/VladSilagy"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="  hover:text-[#1DA1F2]"
-                >
-                  <AiFillTwitterCircle />
-                </a>
-                <a
-                  href="mailto:vladsilagy@gmail.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-blue-500"
-                >
-                  <AiOutlineMail />
-                </a>
+              <div className="text-5xl flex justify-center gap-8 py-5 ease-in-out md:justify-start">
+                <SocialLink
+                  href={"https://github.com/vsilagy"}
+                  icon={<AiFillGithub />}
+                />
+                <SocialLink
+                  href={"https://www.linkedin.com/in/vsilagy/"}
+                  icon={<AiFillLinkedin />}
+                />
+                <SocialLink
+                  href={"https://twitter.com/VladSilagy"}
+                  icon={<AiFillTwitterCircle />}
+                />
+
+                <SocialLink
+                  href={"mailto:vladsilagy@gmail.com"}
+                  icon={<AiOutlineMail />}
+                />
               </div>
             </div>
           </div>
@@ -94,90 +80,34 @@ export default function Home() {
             posuere sem, nec malesuada risus ultrices non. Suspendisse potenti!
           </p>
           <div className="flex flex-col items-center gap-10 py-10 md:flex-row md:flex-wrap  ">
-            <div className="basis-1/3 flex-1 w-[25rem] p-2 rounded-lg shadow-xl dark:bg-gray-700">
-              <Image
-                src={project1}
-                className="rounded-lg object-cover "
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
-              <div className="flex justify-center gap-5 py-5">
-                <CardButton
-                  name={"Link"}
-                  link={"https://vsilagy.github.io/calculator/"}
-                  icon={<HiExternalLink />}
-                />
-                <CardButton
-                  name={"Source"}
-                  link={"https://github.com/vsilagy/calculator/"}
-                  icon={<HiCode />}
-                />
-              </div>
-            </div>
-            <div className="basis-1/3 flex-1 w-[25rem] p-2 rounded-lg shadow-xl dark:bg-slate-700">
-              <Image
-                src={project2}
-                className="rounded-lg object-cover "
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
-              <div className="flex justify-center gap-5 py-5">
-                <CardButton
-                  name={"Link"}
-                  link={"https://vsilagy.github.io/tic-tac-toe/"}
-                  icon={<HiExternalLink />}
-                />
-                <CardButton
-                  name={"Source"}
-                  link={"https://github.com/vsilagy/tic-tac-toe/"}
-                  icon={<HiCode />}
-                />
-              </div>
-            </div>
-            <div className="basis-1/3 flex-1 w-[25rem] p-2 rounded-lg shadow-xl dark:bg-gray-700">
-              <Image
-                src={project3}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
-              <div className="flex justify-center gap-5 py-5">
-                <CardButton
-                  name={"Link"}
-                  link={"https://vsilagy.github.io/library/"}
-                  icon={<HiExternalLink />}
-                />
-                <CardButton
-                  name={"Source"}
-                  link={"https://github.com/vsilagy/library/"}
-                  icon={<HiCode />}
-                />
-              </div>
-            </div>
-            <div className="basis-1/3 flex-1 w-[25rem] p-2 rounded-lg shadow-xl dark:bg-gray-700">
-              <Image
-                src={project4}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
-              <div className="flex justify-center gap-5 py-5">
-                <CardButton
-                  name={"Link"}
-                  link={"https://vsilagy.github.io/rock-paper-scissors/"}
-                  icon={<HiExternalLink />}
-                />
-                <CardButton
-                  name={"Source"}
-                  link={"https://github.com/vsilagy/rock-paper-scissors/"}
-                  icon={<HiCode />}
-                />
-              </div>
-            </div>
+            <Card
+              image={project1}
+              live={"Live"}
+              liveLink={"https://vsilagy.github.io/calculator/"}
+              source={"Source"}
+              sourceLink={"https://github.com/vsilagy/calculator/"}
+            />
+            <Card
+              image={project2}
+              live={"Live"}
+              liveLink={"https://vsilagy.github.io/tic-tac-toe/"}
+              source={"Source"}
+              sourceLink={"https://github.com/vsilagy/tic-tac-toe/"}
+            />
+            <Card
+              image={project3}
+              live={"Live"}
+              liveLink={"https://vsilagy.github.io/library/"}
+              source={"Source"}
+              sourceLink={"https://github.com/vsilagy/library/"}
+            />
+            <Card
+              image={project4}
+              live={"Live"}
+              liveLink={"https://vsilagy.github.io/rock-paper-scissors/"}
+              source={"Source"}
+              sourceLink={"https://github.com/vsilagy/rock-paper-scissors/"}
+            />
           </div>
         </section>
         <Footer />

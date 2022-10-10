@@ -1,13 +1,15 @@
-export default function CardButton({ button, link, icon }) {
+import { HiCode, HiExternalLink } from "react-icons/hi";
+
+export default function CardButton({ href, name }) {
   return (
     <a
-      href={link}
+      href={href}
       target="_blank"
       rel="noopener noreferrer"
       className="w-28 flex justify-center gap-2 items-center bg-transparent hover:bg-blue-500  hover:text-white py-2 px-4 border border-black dark:border-white hover:border-transparent dark:hover:border-transparent rounded-md"
     >
-      {button}
-      {icon}
+      {name}
+      {name === "Live" ? <HiExternalLink /> : <HiCode />}
     </a>
   );
 }

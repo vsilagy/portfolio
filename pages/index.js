@@ -20,7 +20,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <title>Vlad Silagy - Frontend Developer</title>
       </Head>
-      <main className="max-w-screen-lg mx-auto px-5">
+      <main className="max-w-screen-lg mx-auto px-3 md:px-5">
         <NavBar />
         <section className="min-w-full mb-20">
           <div className="text-center py-5 mb-5 md:flex">

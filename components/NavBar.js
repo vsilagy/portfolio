@@ -5,7 +5,7 @@ import DarkModeToggle from "./DarkModeToggle";
 const NavLink = ({ href, children }) => (
   <li>
     <Link href={href}>
-      <a className="bg-transparent hover:bg-blue-500 hover:text-white py-2 px-4 hover:border-transparent rounded-md">
+      <a className="bg-transparent hover:bg-blue-500 hover:text-white py-3 px-4  rounded-md">
         {children}
       </a>
     </Link>
@@ -20,7 +20,7 @@ export default function NavBar() {
           &lt;vsilagy/&gt;
         </a>
       </Link>
-      <ul className="flex items-center gap-4">
+      <ul className="flex items-center gap-3">
         {/* <NavLink href="/about">About</NavLink> */}
         <NavLink href="/projects">Projects</NavLink>
         <NavLink href="/resume">Resume</NavLink>

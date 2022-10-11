@@ -1,7 +1,10 @@
+import Image from "next/image";
+import building from "../public/building.png";
+
 export default function Projects() {
   return (
-    <div>
-      <h1>Projects</h1>
+    <div className="max-w-screen-lg mx-auto ">
+      <Image src={building} layout="responsive" />
     </div>
   );
 }

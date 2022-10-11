@@ -49,19 +49,23 @@ export default function Home() {
               <div className="text-4xl flex justify-center gap-8 py-5 ease-in-out md:justify-start">
                 <SocialLink
                   href={"https://github.com/vsilagy"}
+                  label={"Github"}
                   icon={<SiGithub />}
                 />
                 <SocialLink
                   href={"https://www.linkedin.com/in/vsilagy/"}
+                  label={"LinkedIn"}
                   icon={<SiLinkedin />}
                 />
                 <SocialLink
                   href={"https://twitter.com/VladSilagy"}
+                  label={"Twitter"}
                   icon={<SiTwitter />}
                 />
 
                 <SocialLink
                   href={"mailto:vladsilagy@gmail.com"}
+                  label={"Gmail"}
                   icon={<SiGmail />}
                 />
               </div>
@@ -78,6 +82,7 @@ export default function Home() {
           </p>
           <div className="flex flex-col items-center gap-10 py-10 md:flex-row md:flex-wrap  ">
             <Card
+              title={"Calculator"}
               image={project1}
               live={"Live"}
               liveLink={"https://vsilagy.github.io/calculator/"}
@@ -85,6 +90,7 @@ export default function Home() {
               sourceLink={"https://github.com/vsilagy/calculator/"}
             />
             <Card
+              title={"Tic-Tac-Toe"}
               image={project2}
               live={"Live"}
               liveLink={"https://vsilagy.github.io/tic-tac-toe/"}
@@ -92,6 +98,7 @@ export default function Home() {
               sourceLink={"https://github.com/vsilagy/tic-tac-toe/"}
             />
             <Card
+              title={"Library app"}
               image={project3}
               live={"Live"}
               liveLink={"https://vsilagy.github.io/library/"}
@@ -99,6 +106,7 @@ export default function Home() {
               sourceLink={"https://github.com/vsilagy/library/"}
             />
             <Card
+              title={"Rock Paper Scissors"}
               image={project4}
               live={"Live"}
               liveLink={"https://vsilagy.github.io/rock-paper-scissors/"}

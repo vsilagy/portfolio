@@ -18,7 +18,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Frontend developer based in NYC" />
         <link rel="icon" href="/favicon.ico" />
-        <title>Vlad Silagy - Frontend Developer</title>
+        <title>Vlad V Silagy - Frontend Developer</title>
       </Head>
       <main className="max-w-screen-lg mx-auto px-3 md:px-5">
         <NavBar />

@@ -3,7 +3,7 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import Card from "../components/Card";
 import SocialLink from "../components/SocialLink";
-import { SiLinkedin, SiGithub, SiTwitter, SiGmail } from "react-icons/si";
+import { SiLinkedin, SiGithub, SiGmail } from "react-icons/si";
 import Image from "next/image";
 import profile from "../public/profile-img.png";
 import project1 from "../public/project-1.png";
@@ -16,9 +16,9 @@ export default function Home() {
     <div>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Frontend developer based in NYC" />
+        <meta name="description" content="Frontend developer based in Greenwich, CT" />
         <link rel="icon" href="/favicon.ico" />
-        <title>Vlad V Silagy - Frontend Developer</title>
+        <title>Vlad Silagy - Frontend Developer</title>
       </Head>
       <main className="max-w-screen-lg mx-auto px-3 md:px-5">
         <NavBar />
@@ -57,12 +57,6 @@ export default function Home() {
                   label={"LinkedIn"}
                   icon={<SiLinkedin />}
                 />
-                <SocialLink
-                  href={"https://twitter.com/VladSilagy"}
-                  label={"Twitter"}
-                  icon={<SiTwitter />}
-                />
-
                 <SocialLink
                   href={"mailto:vladsilagy@gmail.com"}
                   label={"Gmail"}

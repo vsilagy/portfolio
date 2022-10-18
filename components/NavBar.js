@@ -16,14 +16,13 @@ export default function NavBar() {
   return (
     <nav className="flex justify-between items-center py-10">
       <Link href="/">
-        <a className="text-sm font-mono font-bold md:text-2xl hover:text-blue-500 dark:hover:text-orange-500">
+        <a className="text-sm font-mono font-bold md:text-2xl">
           &lt;vsilagy/&gt;
         </a>
       </Link>
       <ul className="flex items-center text-sm gap-1 md:text-base md:gap-3">
-        <NavLink href="/about">About</NavLink>
-        <NavLink href="/projects">Projects</NavLink>
-        <NavLink href="/resume">Resume</NavLink>
+        <NavLink href="/">Projects</NavLink>
+        {/* <NavLink href="/">Resume</NavLink> */}
         <DarkModeToggle />
       </ul>
     </nav>

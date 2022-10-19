@@ -11,7 +11,7 @@ export default function Card({
 }) {
   return (
     <div className="flex-1 w-[20rem] p-2 rounded-lg shadow-xl md:w-[25rem] md:basis-1/3  dark:bg-gray-700">
-      <h4 className="text-xl font-mono py-2">{title}</h4>
+      <h4 className="text-2xl font-mono py-2">{title}</h4>
       <Image
         src={image}
         alt="project screenshot"

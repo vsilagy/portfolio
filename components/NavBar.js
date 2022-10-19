@@ -14,7 +14,7 @@ const NavLink = ({ href, children }) => (
 
 export default function NavBar() {
   return (
-    <nav className="flex justify-between items-center py-10">
+    <nav className="flex justify-between items-center py-5 z-10">
       <Link href="/">
         <a className="text-base font-mono font-bold hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg p-2 md:text-2xl">
           &lt;vsilagy/&gt;

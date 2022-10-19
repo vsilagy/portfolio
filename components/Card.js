@@ -10,8 +10,8 @@ export default function Card({
   sourceLink,
 }) {
   return (
-    <div className="flex-1 w-[20rem] p-2 rounded-lg shadow-xl md:w-[25rem] md:basis-1/3  dark:bg-slate-800">
-      <h4 className="text-xl font-mono py-2">{title}</h4>
+    <div className="flex-1 w-[20rem] p-2 rounded-lg shadow-xl md:w-[25rem] md:basis-1/3  dark:bg-gray-700">
+      <h4 className="text-2xl font-mono py-2">{title}</h4>
       <Image
         src={image}
         alt="project screenshot"

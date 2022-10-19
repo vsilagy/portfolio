@@ -5,7 +5,7 @@ export default function SocialLink({ href, label, icon }) {
       aria-label={label}
       target="_blank"
       rel="noopener noreferrer"
-      className=" hover:text-blue-500 dark:hover:text-orange-500"
+      className=" hover:text-sky-500 hover:scale-110 ease-in duration-200"
     >
       {icon}
     </a>

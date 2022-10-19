@@ -12,7 +12,7 @@ const NavLink = ({ href, children }) => (
   </>
 );
 
-export default function NavBar() {
+export default function Nav() {
   return (
     <nav className="flex justify-between items-center py-5 z-10">
       <Link href="/">

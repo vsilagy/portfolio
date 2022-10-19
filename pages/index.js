@@ -1,9 +1,9 @@
 import Head from "next/head";
-import NavBar from "../components/NavBar";
+import Nav from "../components/Nav";
 import Hero from "../components/Hero";
 import MainProjects from "../components/MainProjects";
 import Footer from "../components/Footer";
-import { Main } from "next/document";
+
 
 
 
@@ -17,7 +17,7 @@ export default function Home() {
         <title>Vlad Silagy - Frontend Developer</title>
       </Head>
       <main className="max-w-screen-md mx-auto px-3 md:px-5">
-        <NavBar />
+        <Nav />
         <Hero />
         <MainProjects />
         <Footer />

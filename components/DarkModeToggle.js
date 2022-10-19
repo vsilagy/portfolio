@@ -17,19 +17,19 @@ export default function DarkModeToggle() {
 
     if (currentTheme === "dark") {
       return (
-        <button className="text-xl p-1 md:text-2xl md:ml-2 bg-gray-700 focus:outline-none rounded-lg hover:text-amber-500 md:p-2"
+        <button className="text-xl p-2 md:text-2xl md:ml-2 bg-gray-700 focus:outline-none hover:ring-2 hover:ring-gray-500 rounded-lg hover:text-amber-500"
           onClick={() => setTheme("light")}>
           <MdLightMode/>
         </button>
       );
     } else {
       return (
-        <button className="text-xl p-1 md:text-2xl md:ml-2 bg-gray-200 focus:outline-none  rounded-xl hover:text-amber-500 md:p-2" 
+        <button className="text-xl p-2 md:text-2xl md:ml-2 bg-gray-200 focus:outline-none hover:ring-2 hover:ring-gray-400  rounded-lg hover:text-amber-500" 
           onClick={() => setTheme("dark")}>
           <MdDarkMode/>
         </button>
       );
     }
   };
-  return <li>{renderThemeChanger()}</li>;
+  return <>{renderThemeChanger()}</>;
 }

@@ -20,11 +20,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <title>Vlad Silagy - Frontend Developer</title>
       </Head>
-      <main className="max-w-screen-lg mx-auto px-3 md:px-5">
+      <main className="max-w-screen-md mx-auto px-3 md:px-5">
         <NavBar />
         <section className="min-w-full mb-20">
           <div className="text-center py-5 mb-5 md:flex">
-            <div className="mx-auto mb-5 rounded-full md:basis-1/2 md:order-2">
+            <div className="mx-auto mb-5 rounded-full md:basis-1/3 md:order-2">
               <Image
                 src={profile}
                 alt="Vlad V Silagy"
@@ -35,7 +35,7 @@ export default function Home() {
               />
             </div>
             <div className=" flex-1 md:text-start md:basis-1/2 md:mr-10">
-              <h1 className="text-6xl py-2 text-blue-500  dark:text-orange-400 font-bold lg:text-7xl">
+              <h1 className="text-6xl py-2 font-bold text-sky-500 lg:text-7xl">
                 Vlad Silagy
               </h1>
               <h2 className="text-2xl py-2 font-mono font-bold md:text-3xl">
@@ -67,7 +67,7 @@ export default function Home() {
           </div>
         </section>
         <section className="min-w-full mb-5">
-          <h3 className="text-3xl text-center py-1 font-bold font-mono md:text-start">
+          <h3 className="text-3xl text-center underline py-1 font-bold font-mono md:text-start">
             Projects
           </h3>
           <p className="text-center md:text-start">

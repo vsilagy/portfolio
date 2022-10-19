@@ -6,7 +6,7 @@ export default function CardButton({ href, name }) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="w-28 flex justify-center gap-2 items-center bg-transparent hover:bg-blue-500  hover:text-white py-2 px-4 border border-black dark:border-white hover:border-transparent dark:hover:border-transparent dark:hover:bg-orange-500 rounded-md "
+      className="w-28 flex justify-center gap-2 items-center bg-sky-500 hover:bg-sky-600 text-white  py-2 px-4 rounded-lg md:text-lg md:w-32 hover:scale-105 ease-in duration-200"
     >
       {name}
       {name === "Live" ? <HiExternalLink /> : <HiCode />}

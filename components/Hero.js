@@ -13,7 +13,7 @@ export default function Hero() {
 						alt="Vlad V Silagy"
 						height={240}
 						width={240}
-						className="rounded-full border-8"
+						className="rounded-full"
 					/>
 				</div>
 				<div className=" flex-1 md:text-start md:basis-1/2 md:mr-10">

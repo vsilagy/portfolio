@@ -14,17 +14,10 @@ const NavLink = ({ href, children }) => (
 
 export default function Nav() {
 	return (
-		<nav className="flex justify-between items-center py-5 z-10">
-			<Link href="/">
-				<a className="text-md font-mono font-bold  p-2 ">
-					&lt;vsilagy/&gt;
-				</a>
-			</Link>
-			<div className="flex items-center text-base font-bold gap-1 md:gap-3">
-				<NavLink href="/">Projects</NavLink>
-				{/* <NavLink href="/">Resume</NavLink> */}
-				<DarkModeToggle />
-			</div>
+		<nav className="flex justify-end items-center py-5">
+			<NavLink href="/">Projects</NavLink>
+			{/* <NavLink href="/">Contact</NavLink> */}
+			<DarkModeToggle />
 		</nav>
 	);
 }

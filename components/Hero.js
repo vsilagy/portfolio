@@ -24,7 +24,9 @@ export default function Hero() {
 						Frontend Developer
 					</h2>
 					<p className="text-md py-2">
-						I'm a self-taught frontend developer from Greenwich, CT.
+						{
+							"I'm a self-taught frontend developer from Greenwich, CT."
+						}
 					</p>
 					<div className="text-4xl flex justify-center gap-8 py-5 ease-in-out md:justify-start">
 						<SocialLink

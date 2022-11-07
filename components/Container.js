@@ -1,6 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
+import Nav from './Nav';
+import Footer from './Footer';
 
 export default function Container(props) {
 	const router = useRouter();
@@ -33,6 +35,11 @@ export default function Container(props) {
 					/>
 				)}
 			</Head>
+			<main className="max-w-screen-lg mx-auto px-3 md:px-5">
+				<Nav />
+				<div>{children}</div>
+				<Footer />
+			</main>
 		</div>
 	);
 }

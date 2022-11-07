@@ -1,7 +1,10 @@
+import React from 'react';
 import Head from 'next/head';
+import { userRouter } from 'next/router';
 import Nav from '../components/Nav';
 import Hero from '../components/Hero';
 import MainProjects from '../components/MainProjects';
+import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 
 export default function Home() {
@@ -23,6 +26,7 @@ export default function Home() {
 				<Nav />
 				<Hero />
 				<MainProjects />
+				<Contact />
 				<Footer />
 			</main>
 		</div>

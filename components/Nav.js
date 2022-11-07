@@ -17,7 +17,7 @@ export default function Nav() {
 		<nav className="flex justify-end items-center py-5">
 			<NavLink href="/">Home</NavLink>
 			<NavLink href="/projects">Projects</NavLink>
-			<NavLink href="#contact">Contact</NavLink>
+			<NavLink href="/#contact">Contact</NavLink>
 			<DarkModeToggle />
 		</nav>
 	);

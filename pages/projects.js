@@ -1,3 +1,4 @@
+import Container from '../components/Container';
 export default function projects() {
 	return (
 		<Container title="Projects – Vlad Silagy">

@@ -11,10 +11,8 @@ function NavLink({ href, children }) {
 		<Link href={href}>
 			<a
 				className={cn(
-					isActive
-						? 'font-semibold  hover:bg-gray-200  dark:hover:bg-gray-700'
-						: 'font-normal  hover:bg-gray-200  dark:hover:bg-gray-700',
-					'py-2 px-3 rounded-lg',
+					isActive ? 'font-bold' : 'font-normal',
+					'py-2 px-3 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800',
 				)}>
 				{children}
 			</a>

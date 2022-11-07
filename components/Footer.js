@@ -4,8 +4,8 @@ import { SiGithub, SiLinkedin, SiTwitter } from 'react-icons/si';
 
 export default function Footer() {
 	return (
-		<footer>
-			<div className="flex flex-col-reverse gap-1 justify-between items-center py-5 md:flex-row text-gray-700 dark:text-slate-300">
+		<footer className="border-t border-gray-200 dark:border-gray-700">
+			<div className="flex flex-col-reverse gap-1 justify-between items-center py-5 md:flex-row text-gray-800 dark:text-white">
 				<div className="flex flex-col gap-1">
 					<p>© Vlad Silagy, 2022</p>
 					<div className="flex text-xl gap-2 justify-center items-center">
@@ -15,7 +15,7 @@ export default function Footer() {
 								href="https://nextjs.org/"
 								target={'_blank'}
 								rel={'noreferrer'}
-								className="font-medium hover:text-sky-500 hover:border-b-2 hover:border-sky-500">
+								className="font-medium hover:text-blue-500 hover:border-b hover:border-blue-500">
 								NextJS
 							</a>{' '}
 							and{' '}
@@ -23,7 +23,7 @@ export default function Footer() {
 								href="https://tailwindcss.com/"
 								target={'_blank'}
 								rel={'noreferrer'}
-								className="font-medium hover:text-sky-500 hover:border-b-2 hover:border-sky-500">
+								className="font-medium hover:text-blue-500 hover:border-b hover:border-blue-500">
 								Tailwind CSS
 							</a>
 						</p>

@@ -1,17 +1,15 @@
 import React from 'react';
 import Head from 'next/head';
-import { useRouter } from 'next/router';
 import Nav from './Nav';
 import Footer from './Footer';
+import data from '../public/data';
 
 export default function Container(props) {
-	const router = useRouter();
-
 	const { children, ...customMeta } = props;
 	const meta = {
-		title: 'Vlad Silagy - Frontend Developer',
-		description: 'Front-end developer based in Greenwich CT',
-		image: '/profile-img.png',
+		title: `${data.title}`,
+		description: `${data.description}`,
+		image: `${data.profile}`,
 		type: 'website',
 		...customMeta,
 	};

@@ -38,11 +38,19 @@
 	font-weight: 700;
 	src: url(/public/fonts/JetBrainsMono-Bold.ttf) format('truetype');
 }
-
+@layer components {
+	.btn {
+		@apply flex justify-center gap-2 items-center font-semibold text-blue-500 ring-2 ring-blue-500 dark:text-blue-400 dark:ring-blue-400 hover:bg-gray-200 dark:hover:bg-gray-700 py-2 px-4 rounded-md ease-in duration-200;
+	}
+}
 * {
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
+}
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 a {
 	color: inherit;

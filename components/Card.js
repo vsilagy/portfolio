@@ -1,29 +1,37 @@
-import CardButton from "./CardButton";
-import Image from "next/image";
+import Image from 'next/image';
+import { HiCode, HiExternalLink } from 'react-icons/hi';
 
-export default function Card({
-  title,
-  image,
-  live,
-  source,
-  liveLink,
-  sourceLink,
-}) {
-  return (
-    <div className="flex-1 w-[20rem] p-2 rounded-lg shadow-xl md:w-[25rem] md:basis-1/3  dark:bg-gray-700">
-      <h4 className="text-2xl font-mono py-2">{title}</h4>
-      <Image
-        src={image}
-        alt="project screenshot"
-        className="rounded-lg object-cover"
-        width={"100%"}
-        height={"100%"}
-        layout="responsive"
-      />
-      <div className="flex justify-center gap-5 py-5">
-        <CardButton href={liveLink} name={live} />
-        <CardButton href={sourceLink} name={source} />
-      </div>
-    </div>
-  );
+export default function Card({ title, image, live, link }) {
+	return (
+		<div className="flex-1 w-[20rem] border border-gray-200 p-2 rounded-md  md:w-[25rem] md:basis-1/3 dark:bg-gray-800 dark:border-gray-700">
+			<h4 className="text-2xl font-mono py-2">{title}</h4>
+			<Image
+				src={image}
+				alt="project screenshot"
+				className="rounded-lg object-cover"
+				width={'100%'}
+				height={'100%'}
+				layout="responsive"
+				priority="true"
+			/>
+			<div className="flex justify-center gap-5 py-5">
+				<a
+					href={live}
+					target="_blank"
+					rel="noopener noreferrer"
+					className="btn w-28 md:text-lg md:w-32">
+					Live
+					<HiExternalLink />
+				</a>
+				<a
+					href={link}
+					target="_blank"
+					rel="noopener noreferrer"
+					className="btn w-28 md:text-lg md:w-32">
+					Source
+					<HiCode />
+				</a>
+			</div>
+		</div>
+	);
 }

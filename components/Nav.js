@@ -14,7 +14,7 @@ function NavLink({ href, children }) {
 					isActive
 						? 'font-semibold  hover:bg-gray-200  dark:hover:bg-gray-700'
 						: 'font-normal  hover:bg-gray-200  dark:hover:bg-gray-700',
-					'py-2 px-2 rounded-lg',
+					'py-2 px-3 rounded-lg',
 				)}>
 				{children}
 			</a>

@@ -58,3 +58,6 @@ a {
 	color: inherit;
 	text-decoration: none;
 }
+.burger {
+	z-index: 99;
+}

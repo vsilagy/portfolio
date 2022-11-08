@@ -40,10 +40,13 @@
 }
 @layer components {
 	.btn {
-		@apply flex justify-center gap-2 items-center font-semibold bg-white text-blue-500 ring-2 ring-blue-500 dark:text-blue-400 dark:ring-blue-400 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 py-2 px-4 rounded-md ease-in duration-200;
+		@apply flex justify-center gap-2 items-center font-semibold bg-white text-blue-500 ring-2 ring-blue-500 dark:text-blue-400 dark:ring-blue-400 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 py-2 px-4 rounded-md ease-in duration-200;
 	}
 	.light {
 		@apply bg-gray-100;
+	}
+	.dark {
+		@apply bg-neutral-900;
 	}
 }
 * {

@@ -6,7 +6,6 @@ export default function Contact() {
 			<h3 className="text-3xl text-center underline py-1 mb-5 font-bold font-mono md:text-start">
 				Contact
 			</h3>
-
 			<div className="relative rounded-md mb-10">
 				<div className="flex flex-col md:flex-row md:items-center md:justify-between md:gap-10">
 					<form className="flex flex-col  w-[20rem] mx-auto py-4 px-2 border rounded-md  border-gray-300 bg-white dark:bg-gray-800 dark:border-gray-700 md:flex-1 md:basis-1/2">
@@ -16,28 +15,28 @@ export default function Contact() {
 						</label>
 						<input
 							type="text"
-							className=" rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 dark:bg-gray-800 dark:border-gray-700 focus:ring-2 focus:border-none ring-blue-500"
+							className=" rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 dark:bg-gray-800 dark:border-gray-700 focus:ring-2 focus:border-none ring-blue-500 dark:ring-blue-400"
 							name="name"
 						/>
 						<label htmlFor="email" className="text-sm  mx-4 mt-4">
-							Email
+							Your Email
 						</label>
 						<input
 							type="text"
-							className=" rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 dark:bg-gray-800 dark:border-gray-700 focus:ring-2 focus:border-none ring-blue-500"
+							className=" rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 dark:bg-gray-800 dark:border-gray-700 focus:ring-2 focus:border-none ring-blue-500 dark:ring-blue-400"
 							name="email"
 						/>
 						<label htmlFor="message" className="text-sm  mx-4 mt-4">
-							Message
+							Write your message
 						</label>
 						<textarea
 							rows="4"
 							type="text"
-							className=" rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 dark:bg-gray-800 dark:border-gray-700 focus:ring-2 focus:border-none ring-blue-500"
+							className=" rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 dark:bg-gray-800 dark:border-gray-700 focus:ring-2 focus:border-none ring-blue-500 dark:ring-blue-400"
 							name="message"></textarea>
 						<button
 							type="submit"
-							className="text-base font-semibold m-4 py-2 px-4 w-40 bg-white text-blue-500 ring-2 ring-blue-500 dark:text-blue-400 dark:ring-blue-400 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 rounded-md ease-in duration-200 ">
+							className="text-base font-semibold m-4 py-2 px-4 w-40 bg-white text-blue-500 ring-2 ring-blue-500 dark:text-blue-400 dark:ring-blue-400 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 rounded-md ease-in duration-200 ">
 							Send Message
 						</button>
 					</form>

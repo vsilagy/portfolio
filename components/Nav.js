@@ -1,7 +1,9 @@
+import { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import cn from 'classnames';
 import DarkModeToggle from './DarkModeToggle';
+import { Cross as Hamburger } from 'hamburger-react';
 
 function NavLink({ href, children }) {
 	const router = useRouter();
@@ -21,12 +23,34 @@ function NavLink({ href, children }) {
 }
 
 export default function Nav() {
+	const [isOpen, setOpen] = useState(false);
 	return (
-		<nav className="flex justify-end items-center py-5">
-			<NavLink href="/">Home</NavLink>
-			<NavLink href="/projects">Projects</NavLink>
-			{/* <NavLink href="/resume">Resume</NavLink> */}
-			<DarkModeToggle />
-		</nav>
+		<>
+			<nav className="relative flex justify-between md:justify-end items-center py-5">
+				<div className="hidden md:flex justify-end items-center py-5">
+					<NavLink href="/">Home</NavLink>
+					<NavLink href="/projects">Projects</NavLink>
+					{/* <NavLink href="/resume">Resume</NavLink> */}
+				</div>
+				<div className="md:hidden" onClick={() => setOpen(!isOpen)}>
+					<Hamburger
+						direction="left"
+						size={24}
+						label="Show menu"
+						toggled={isOpen}
+						toggle={setOpen}
+						duration={0.5}
+					/>
+					{isOpen && (
+						<div className="absolute w-full h-screen z-10 flex flex-col items-start justify-start text-3xl py-2 mt-2 rounded-md bg-gray-100 dark:bg-neutral-900">
+							<NavLink href="/">Home</NavLink>
+							<NavLink href="/projects">Projects</NavLink>
+							{/* <NavLink href="/resume">Resume</NavLink> */}
+						</div>
+					)}
+				</div>
+				<DarkModeToggle />
+			</nav>
+		</>
 	);
 }

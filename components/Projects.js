@@ -10,24 +10,25 @@ export default function Projects() {
 	useEffect(() => {
 		const fetchRepos = async () => {
 			const response = await fetch(
-				`https://api.github.com/search/repositories?q=user:${username}+sort:author-date-ascs`,
+				`https://api.github.com/search/repositories?q=user:${username}+sort:updated-desc`,
 			);
 			const repo = await response.json();
+			console.log(repo);
 			setRepos(repo.items);
 		};
 		fetchRepos();
 	}, []);
 	return (
-		<section className="min-w-full my-3">
-			<div className="flex justify-between mb-5">
-				<h1 className="text-3xl text-center underline py-1 font-bold font-mono md:text-start">
-					Personal Projects
+		<section className="min-w-full my-5">
+			<div className="flex flex-col gap-4 justify-between items-center px-4 md:flex-row md:px-0">
+				<h1 className="text-3xl text-center underline py-1 font-bold font-mono md:text-start md:text-4xl">
+					Projects
 				</h1>
 				<a
 					href={data.links.github}
 					target="_blank"
 					rel="noopener noreferrer"
-					className="flex gap-1 items-center bg-white hover:bg-gray-200 border border-gray-300 px-8 py-4 rounded-md text-xl font-semibold dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+					className="flex gap-1 items-center text-md font-semibold bg-white hover:bg-gray-200 border border-gray-300 px-4 py-2 rounded-md dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 md:text-xl">
 					View Github <HiExternalLink />
 				</a>
 			</div>

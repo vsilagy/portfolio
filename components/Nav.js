@@ -26,11 +26,10 @@ export default function Nav() {
 	const [isOpen, setOpen] = useState(false);
 	return (
 		<>
-			<nav className="relative flex justify-between md:justify-end items-center py-5">
+			<nav className="relative flex justify-between px-3 md:justify-end items-center py-5 md:px-0">
 				<div className="hidden md:flex justify-end items-center py-5">
 					<NavLink href="/">Home</NavLink>
 					<NavLink href="/projects">Projects</NavLink>
-					{/* <NavLink href="/resume">Resume</NavLink> */}
 				</div>
 				<div className="md:hidden" onClick={() => setOpen(!isOpen)}>
 					<Hamburger
@@ -45,7 +44,6 @@ export default function Nav() {
 						<div className="absolute w-full h-screen z-10 flex flex-col items-start justify-start text-3xl py-2 mt-2 rounded-md bg-gray-100 dark:bg-neutral-900">
 							<NavLink href="/">Home</NavLink>
 							<NavLink href="/projects">Projects</NavLink>
-							{/* <NavLink href="/resume">Resume</NavLink> */}
 						</div>
 					)}
 				</div>

@@ -28,7 +28,7 @@ export default function Projects() {
 					href={data.links.github}
 					target="_blank"
 					rel="noopener noreferrer"
-					className="flex gap-1 items-center text-md font-semibold bg-white hover:bg-gray-200 border border-gray-300 px-4 py-2 rounded-md dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 md:text-xl">
+					className="flex gap-1 items-center text-md font-semibold bg-white hover:bg-gray-200 border border-gray-300 px-4 py-2 rounded-md dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 md:text-xl md:px-6 md:py-3">
 					View Github <HiExternalLink />
 				</a>
 			</div>
@@ -43,8 +43,10 @@ export default function Projects() {
 }
 
 function RepoCard({ repo }) {
+	const { topics } = repo;
+
 	return (
-		<div className="flex-1 w-[20rem] h-52 border border-gray-300 bg-white p-4 space-y-4 rounded-md md:w-[25rem] md:basis-1/3 dark:bg-gray-800  dark:border-gray-700">
+		<div className="flex-1 w-[20rem] h-64 border border-gray-300 bg-white p-4 space-y-4 rounded-md md:w-[25rem] md:basis-1/3 dark:bg-gray-800  dark:border-gray-700">
 			<a
 				href={repo.html_url}
 				target="_blank"
@@ -58,11 +60,19 @@ function RepoCard({ repo }) {
 				href={repo.homepage}
 				target="_blank"
 				rel="noopener noreferrer"
-				className="text-md font-semibold flex items-center gap-1">
+				className="text-md flex items-center gap-1">
 				View Live
 				<HiExternalLink />
 			</a>
-			<p className="text-gray-500">{repo.topics.join(' ')}</p>
+			<p className="flex flex-wrap gap-2">
+				{topics.map((topic, idx) => (
+					<span
+						className="py-1 px-3 bg-slate-300 dark:bg-slate-600 rounded"
+						key={idx}>
+						{topic}
+					</span>
+				))}
+			</p>
 		</div>
 	);
 }

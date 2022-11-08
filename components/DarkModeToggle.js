@@ -18,7 +18,7 @@ export default function DarkModeToggle() {
 		if (currentTheme === 'dark') {
 			return (
 				<button
-					className="text-xl p-2 ml-1 md:text-2xl  bg-gray-800 focus:outline-none hover:ring-2 hover:ring-gray-500 rounded-lg hover:text-amber-500"
+					className="text-xl p-2 ml-1 md:text-2xl  bg-gray-800 focus:outline-none hover:ring-2 hover:ring-gray-500 rounded-lg hover:text-amber-500 transition duration-1000"
 					onClick={() => setTheme('light')}>
 					<MdLightMode />
 				</button>

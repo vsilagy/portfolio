@@ -6,6 +6,7 @@ const userData = {
 	description: `I'm a self-taught front-end developer from Greenwich, CT`,
 	profile: '/profile-img.png',
 	email: 'vladsilagy@gmail.com',
+	address: 'Greenwich, CT',
 	links: {
 		github: 'https://github.com/vsilagy',
 		linkedin: 'https://linkedin.com/in/vsilagy',

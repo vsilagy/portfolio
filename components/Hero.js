@@ -37,16 +37,6 @@ export default function Hero() {
 							name={'LinkedIn'}
 							icon={<SiLinkedin />}
 						/>
-						{/* <SocialLink
-							href={data.links.twitter}
-							label={'Twitter'}
-							icon={<SiTwitter />}
-						/>
-						<SocialLink
-							href={data.email}
-							label={'Gmail'}
-							icon={<SiGmail />}
-						/> */}
 					</div>
 				</div>
 			</div>

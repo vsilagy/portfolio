@@ -4,7 +4,7 @@ import { SiGithub, SiLinkedin, SiTwitter } from 'react-icons/si';
 
 export default function Footer() {
 	return (
-		<footer className="border-t border-gray-200 dark:border-gray-700">
+		<footer className="border-t border-gray-300 dark:border-gray-700">
 			<div className="flex flex-col-reverse gap-1 justify-between items-center py-5 md:flex-row text-gray-800 dark:text-white">
 				<div className="flex flex-col gap-1">
 					<p>© Vlad Silagy, 2022</p>

@@ -55,12 +55,12 @@ function RepoCard({ repo }) {
 				{repo.name}
 				<HiExternalLink />
 			</a>
-			<p>{repo.description}</p>
+			<p className="md:h-12">{repo.description}</p>
 			<a
 				href={repo.homepage}
 				target="_blank"
 				rel="noopener noreferrer"
-				className="text-md flex items-center gap-1">
+				className="text-md font-semibold flex items-center gap-1">
 				View Live
 				<HiExternalLink />
 			</a>

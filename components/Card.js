@@ -3,8 +3,10 @@ import { HiCode, HiExternalLink } from 'react-icons/hi';
 
 export default function Card({ title, image, live, link }) {
 	return (
-		<div className="flex-1 w-[20rem] border border-gray-200 p-2 rounded-md  md:w-[25rem] md:basis-1/3 dark:bg-gray-800 dark:border-gray-700">
-			<h4 className="text-2xl font-mono py-2">{title}</h4>
+		<div className="flex-1 w-[20rem] bg-white  border border-gray-300 p-2 rounded-md  md:basis-1/3 dark:bg-gray-800 dark:border-gray-700">
+			<h4 className="text-2xl text-center font-mono py-2 md:text-start">
+				{title}
+			</h4>
 			<Image
 				src={image}
 				alt="project screenshot"
@@ -19,7 +21,7 @@ export default function Card({ title, image, live, link }) {
 					href={live}
 					target="_blank"
 					rel="noopener noreferrer"
-					className="btn w-28 md:text-lg md:w-32">
+					className="btn w-32 md:text-lg">
 					Live
 					<HiExternalLink />
 				</a>
@@ -27,7 +29,7 @@ export default function Card({ title, image, live, link }) {
 					href={link}
 					target="_blank"
 					rel="noopener noreferrer"
-					className="btn w-28 md:text-lg md:w-32">
+					className="btn w-32 md:text-lg">
 					Source
 					<HiCode />
 				</a>

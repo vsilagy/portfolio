@@ -17,7 +17,6 @@ export default function Projects() {
 		};
 		fetchRepos();
 	}, []);
-
 	return (
 		<section className="min-w-full my-3">
 			<div className="flex justify-between mb-5">
@@ -28,7 +27,7 @@ export default function Projects() {
 					href={data.links.github}
 					target="_blank"
 					rel="noopener noreferrer"
-					className="flex gap-1 items-center md:mb-0 border bg-gray-100 border-gray-200 px-8 py-4 rounded-md text-xl font-semibold dark:bg-gray-800 dark:border-gray-700">
+					className="flex gap-1 items-center bg-white hover:bg-gray-200 border border-gray-300 px-8 py-4 rounded-md text-xl font-semibold dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
 					View Github <HiExternalLink />
 				</a>
 			</div>
@@ -44,13 +43,14 @@ export default function Projects() {
 
 function RepoCard({ repo }) {
 	return (
-		<div className="flex-1 w-[20rem] h-48 border border-gray-200 bg-gray-50 p-4 space-y-4 rounded-md md:w-[25rem] md:basis-1/3 dark:bg-gray-800  dark:border-gray-700">
+		<div className="flex-1 w-[20rem] h-52 border border-gray-300 bg-white p-4 space-y-4 rounded-md md:w-[25rem] md:basis-1/3 dark:bg-gray-800  dark:border-gray-700">
 			<a
 				href={repo.html_url}
 				target="_blank"
 				rel="noopener noreferrer"
 				className="flex items-center gap-1 font-mono font-bold text-2xl text-blue-500 dark:text-blue-400">
 				{repo.name}
+				<HiExternalLink />
 			</a>
 			<p>{repo.description}</p>
 			<a
@@ -61,6 +61,7 @@ function RepoCard({ repo }) {
 				View Live
 				<HiExternalLink />
 			</a>
+			<p className="text-gray-500">{repo.topics.join(' ')}</p>
 		</div>
 	);
 }

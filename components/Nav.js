@@ -12,7 +12,7 @@ function NavLink({ href, children }) {
 			<a
 				className={cn(
 					isActive ? 'font-bold' : 'font-normal',
-					'py-2 px-3 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800',
+					'py-2 px-3 rounded-lg antialiased hover:bg-gray-300 dark:hover:bg-gray-800',
 				)}>
 				{children}
 			</a>

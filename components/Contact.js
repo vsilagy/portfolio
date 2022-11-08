@@ -8,14 +8,17 @@ export default function Contact() {
 			</h3>
 			<div className="relative rounded-md mb-10">
 				<div className="flex flex-col md:flex-row md:items-center md:justify-between md:gap-8">
-					<form className="flex flex-col  w-[20rem] mx-auto py-4 px-2 border rounded-md  border-gray-300 bg-white dark:bg-gray-800 dark:border-gray-700 md:flex-1 md:basis-1/2">
+					<form
+						action="https://formsubmit.co/45253232dac18859338cf10293e893fc"
+						method="post"
+						className="flex flex-col  w-[20rem] mx-auto py-4 px-2 border rounded-md  border-gray-300 bg-white dark:bg-gray-800 dark:border-gray-700 md:flex-1 md:basis-1/2">
 						<label htmlFor="name" className="text-sm  mx-4">
 							{' '}
 							Your Name
 						</label>
 						<input
 							type="text"
-							className=" rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 dark:bg-gray-800 dark:border-gray-700 focus:ring-2 focus:border-none ring-blue-500 dark:ring-blue-400"
+							className="py-2 mt-2 px-1 mx-4 rounded-md border-2 focus:outline-none dark:bg-gray-800 dark:border-gray-700 focus:border-2 focus:border-blue-500 dark:focus:border-blue-400"
 							name="name"
 						/>
 						<label htmlFor="email" className="text-sm  mx-4 mt-4">
@@ -23,7 +26,7 @@ export default function Contact() {
 						</label>
 						<input
 							type="text"
-							className=" rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 dark:bg-gray-800 dark:border-gray-700 focus:ring-2 focus:border-none ring-blue-500 dark:ring-blue-400"
+							className="py-2 mt-2 px-1 mx-4 rounded-md border-2 focus:outline-none dark:bg-gray-800 dark:border-gray-700 focus:border-2 focus:border-blue-500 dark:focus:border-blue-400"
 							name="email"
 						/>
 						<label htmlFor="message" className="text-sm  mx-4 mt-4">
@@ -32,7 +35,7 @@ export default function Contact() {
 						<textarea
 							rows="4"
 							type="text"
-							className=" rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 dark:bg-gray-800 dark:border-gray-700 focus:ring-2 focus:border-none ring-blue-500 dark:ring-blue-400"
+							className="py-2 mt-2 px-1 mx-4 rounded-md border-2 focus:outline-none dark:bg-gray-800 dark:border-gray-700 focus:border-2 focus:border-blue-500 dark:focus:border-blue-400"
 							name="message"></textarea>
 						<button
 							type="submit"

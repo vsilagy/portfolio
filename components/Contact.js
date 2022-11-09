@@ -9,7 +9,7 @@ export default function Contact() {
 			<div className="relative rounded-md mb-10">
 				<div className="flex flex-col md:flex-row md:items-center md:justify-between md:gap-8">
 					<form
-						action="https://formsubmit.co/45253232dac18859338cf10293e893fc"
+						action="https://getform.io/f/f0e3f79a-e965-4256-a4f6-31e23226edbe"
 						method="post"
 						className="flex flex-col  w-[20rem] mx-auto py-4 px-2 border rounded-md  border-gray-300 bg-white dark:bg-gray-800 dark:border-gray-700 md:flex-1 md:basis-1/2">
 						<label htmlFor="name" className="text-sm  mx-4">

@@ -46,7 +46,7 @@ function RepoCard({ repo }) {
 	const { topics } = repo;
 
 	return (
-		<div className="flex-1 w-[20rem] h-64 border border-gray-300 bg-white p-4 space-y-4 rounded-md md:w-[25rem] md:basis-1/3 dark:bg-gray-800  dark:border-gray-700">
+		<div className="flex-1 w-[20rem] h-64 border border-gray-300 bg-white p-6  space-y-4 rounded-md md:w-[25rem] md:basis-1/3 dark:bg-gray-800  dark:border-gray-700">
 			<a
 				href={repo.html_url}
 				target="_blank"
@@ -67,7 +67,7 @@ function RepoCard({ repo }) {
 			<p className="flex flex-wrap gap-2">
 				{topics.map((topic, idx) => (
 					<span
-						className="py-1 px-3 bg-slate-300 dark:bg-slate-600 rounded"
+						className="py-1 px-2 bg-slate-300 dark:bg-slate-600 rounded"
 						key={idx}>
 						{topic}
 					</span>

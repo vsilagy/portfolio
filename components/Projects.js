@@ -13,8 +13,8 @@ export default function Projects() {
 				`https://api.github.com/search/repositories?q=user:${username}+sort:updated-desc`,
 			);
 			const repo = await response.json();
-			console.log(repo);
-			setRepos(repo.items);
+			let latestRepos = repo.items.splice(0, 16);
+			setRepos(latestRepos);
 		};
 		fetchRepos();
 	}, []);
@@ -46,7 +46,7 @@ function RepoCard({ repo }) {
 	const { topics } = repo;
 
 	return (
-		<div className="flex-1 w-[20rem] h-64 border border-gray-300 bg-white p-4 space-y-4 rounded-md md:w-[25rem] md:basis-1/3 dark:bg-gray-800  dark:border-gray-700">
+		<div className="flex-1 w-[20rem] h-64 border border-gray-300 bg-white p-4 space-y-4 rounded-md md:w-[28rem] md:basis-1/3 dark:bg-gray-800  dark:border-gray-700">
 			<a
 				href={repo.html_url}
 				target="_blank"

@@ -7,17 +7,17 @@ export default function Hero() {
 	return (
 		<section className="min-w-full mb-20">
 			<div className="text-center py-5 mb-5 md:flex">
-				<div className="mx-auto bg-transparent md:mx-12  md:order-2">
+				<div className="profile h-[250px] w-[250px] before:bg-blue-500 dark:before:bg-blue-400 mx-auto mb-6 bg-transparent md:mb-0 md:mx-12 md:order-2">
 					<Image
 						src={data.profile}
 						alt={data.name}
-						height={250}
-						width={250}
+						height="250px"
+						width="250px"
 						className="rounded-full"
 					/>
 				</div>
 				<div className=" flex-1 md:text-start md:mr-10">
-					<h1 className="text-5xl py-2 font-bold lg:text-6xl">
+					<h1 className="text-5xl py-2 font-bold text-blue-500 dark:text-blue-400 lg:text-6xl">
 						{data.name}
 					</h1>
 					<h2 className="text-xl py-2 font-mono font-bold md:text-3xl">

@@ -61,3 +61,12 @@ a {
 .burger {
 	z-index: 99;
 }
+.profile::before {
+	content: '';
+	width: 275px;
+	height: 275px;
+	margin-top: -13px;
+	margin-left: -13px;
+	border-radius: 50%;
+	position: absolute;
+}

@@ -14,12 +14,16 @@ export default function MainProjects() {
 				<Card
 					title={'Github Dev Search'}
 					image={imageDev}
+					description={
+						'A react app that uses GitHub REST API to find users and display their info, styled with Tailwind CSS'
+					}
 					live={'https://gh-dev-search.netlify.app/'}
-					link={'https://github.com/vsilagy/gh-dev-search/'}
+					link={'https://github.com/vsilagy/github-dev-search'}
 				/>
 				<Card
 					title={'Toucan Coffee'}
 					image={imageCoffee}
+					description={`A coffee ecommerce site built with React. Part of collaborative project from Chingu Voyages`}
 					live={'https://toucan-coffee.netlify.app/'}
 					link={
 						'https://github.com/chingu-voyages/v41-toucans-team-04'
@@ -28,12 +32,18 @@ export default function MainProjects() {
 				<Card
 					title={'Calculator'}
 					image={imageCalc}
+					description={
+						'A simple calculator built with JavaScript, CSS and HTML'
+					}
 					live={'https://vsilagy.github.io/calculator/'}
 					link={'https://github.com/vsilagy/calculator/'}
 				/>
 				<Card
 					title={'Tic-Tac-Toe'}
 					image={imageTic}
+					description={
+						'A game of Tic-Tac-Toe built with JavaScript, CSS and HTML'
+					}
 					live={'https://vsilagy.github.io/tic-tac-toe/'}
 					link={'https://github.com/vsilagy/tic-tac-toe/'}
 				/>

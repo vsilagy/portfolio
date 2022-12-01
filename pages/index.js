@@ -1,14 +1,14 @@
 import React from 'react';
 import Container from '../components/Container';
 import Hero from '../components/Hero';
-import MainProjects from '../components/MainProjects';
+import Projects from '../components/Projects';
 import Contact from '../components/Contact';
 
 export default function Home() {
 	return (
 		<Container>
 			<Hero />
-			<MainProjects />
+			<Projects />
 			<Contact />
 		</Container>
 	);
